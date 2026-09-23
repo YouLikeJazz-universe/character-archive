@@ -4,12 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Character Archive</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111318;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 50px;
+      background: linear-gradient(#1d2130, #111318);
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #b9bec9;
+      font-size: 18px;
+    }
+
+    .characters {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .characters h2 {
+      text-align: center;
+      font-size: 32px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #1c2029;
+      border-radius: 15px;
+      padding: 25px;
+      transition: 0.3s;
+      border: 1px solid #303644;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      background: #252a36;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card p {
+      color: #b9bec9;
+      line-height: 1.6;
+    }
+  </style>
 </head>
+
 <body>
 
-  <h1>Welcome to My Character Archive</h1>
+  <header>
+    <h1>Character Archive</h1>
+    <p>Characters, worlds, stories, and lore.</p>
+  </header>
 
-  <p>This is the beginning of my character and worldbuilding website.</p>
+  <section class="characters">
+
+    <h2>Explore the Worlds</h2>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <h3>Supernatural Boys</h3>
+        <p>A rock band filled with complicated histories, relationships, and supernatural stage personas.</p>
+      </div>
+
+      <div class="card">
+        <h3>Ashfall</h3>
+        <p>Survivors navigating a ruined world shaped by ash, monsters, and the Verdant Rot.</p>
+      </div>
+
+      <div class="card">
+        <h3>OutKast & Ace</h3>
+        <p>Professional soccer rivals, old friendships, grudges, and fierce competition.</p>
+      </div>
+
+      <div class="card">
+        <h3>Character Library</h3>
+        <p>Explore individual characters, artwork, relationships, quotes, and lore.</p>
+      </div>
+
+    </div>
+
+  </section>
 
 </body>
 </html>
